@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Online Cake Ordering System</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f5f5f5;
+      }
+      
+      header {
+         background-color: #333;
+         color: #fff;
+         padding: 20px;
+         text-align: center;
+      }
+      
+      main {
+         max-width: 900px;
+         margin: 20px auto;
+         background-color: #fff;
+         padding: 20px;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      form {
+         margin: 20px 0;
+      }
+      
+      label {
+         display: block;
+         margin-bottom: 5px;
+         font-weight: bold;
+      }
+      
+      input[type="text"], textarea {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+      
+      table {
+         width: 100%;
+         border-collapse: collapse;
+      }
+      
+      th, td {
+         padding: 10px;
+         text-align: center;
+         border-bottom: 1px solid #ccc;
+      }
+      
+      th {
+         background-color: #333;
+         color: #fff;
+      }
+      
+      .success-message {
+         background-color: #43a84a;
+         color: #fff;
+         padding: 10px;
+         margin-bottom: 20px;
+      }
+      
+      .error-message {
+         background-color: #e63946;
+         color: #fff;
+         padding: 10px;
+         margin-bottom: 20px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Online Cake Ordering System</h1>
+   </header>
+   <main>
+      <h2>Order a Cake</h2>
+      <form id="orderForm">
+         <label for="cakeName">Cake Name:</label>
+         <input type="text" id="cakeName" name="cakeName" required>
+         
+         <label for="cakeSize">Cake Size:</label>
+         <input type="text" id="cakeSize" name="cakeSize" required>
+         
+         <label for="cakeFlavor">Cake Flavor:</label>
+         <input type="text" id="cakeFlavor" name="cakeFlavor" required>
+         
+         <label for="cakeToppings">Cake Toppings:</label>
+         <input type="text" id="cakeToppings" name="cakeToppings" required>
+         
+         <label for="specialInstructions">Special Instructions:</label>
+         <textarea id="specialInstructions" name="specialInstructions"></textarea>
+         
+         <input type="submit" value="Place Order">
+      </form>
+      
+      <h2>Orders</h2>
+      <table id="orderTable">
+         <thead>
+            <tr>
+               <th>Cake Name</th>
+               <th>Size</th>
+               <th>Flavor</th>
+               <th>Toppings</th>
+               <th>Instructions</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- Order details will be dynamically added here -->
+         </tbody>
+      </table>
+   </main>
+   
+   <script>
+      document.getElementById("orderForm").addEventListener("submit", function(event) {
+         event.preventDefault();
+         
+         var cakeName = document.getElementById("cakeName").value;
+         var cakeSize = document.getElementById("cakeSize").value;
+         var cakeFlavor = document.getElementById("cakeFlavor").value;
+         var cakeToppings = document.getElementById("cakeToppings").value;
+         var specialInstructions = document.getElementById("specialInstructions").value;
+         
+         var orderTable = document.getElementById("orderTable").getElementsByTagName("tbody")[0];
+         var newRow = orderTable.insertRow(orderTable.rows.length);
+         var cell1 = newRow.insertCell(0);
+         var cell2 = newRow.insertCell(1);
+         var cell3 = newRow.insertCell(2);
+         var cell4 = newRow.insertCell(3);
+         var cell5 = newRow.insertCell(4);
+         cell1.innerHTML = cakeName;
+         cell2.innerHTML = cakeSize;
+         cell3.innerHTML = cakeFlavor;
+         cell4.innerHTML = cakeToppings;
+         cell5.innerHTML = specialInstructions;
+         
+         document.getElementById("orderForm").reset();
+      });
+   </script>
+</body>
+</html>
