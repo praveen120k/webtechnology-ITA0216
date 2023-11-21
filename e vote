@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Voting System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .candidate-card {
+      display: inline-block;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>E-Voting System</h1>
+  
+  <div class="candidate-card">
+    <h2>Candidate 1</h2>
+    <img src="candidate1.jpg" alt="Candidate 1">
+    <p>Party: Party A</p>
+    <button onclick="vote(1)">Vote</button>
+  </div>
+  
+  <div class="candidate-card">
+    <h2>Candidate 2</h2>
+    <img src="candidate2.jpg" alt="Candidate 2">
+    <p>Party: Party B</p>
+    <button onclick="vote(2)">Vote</button>
+  </div>
+  
+  <div class="candidate-card">
+    <h2>Candidate 3</h2>
+    <img src="candidate3.jpg" alt="Candidate 3">
+    <p>Party: Party C</p>
+    <button onclick="vote(3)">Vote</button>
+  </div>
+  
+  <script>
+    function vote(candidateId) {
+      // Here you can implement the logic to submit the vote to the server/database.
+      // You can use Ajax or fetch API to send the request.
+      // For simplicity, this example will just display an alert.
+      alert("Vote submitted for Candidate " + candidateId);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Vehicle Rental System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Vehicle Rental System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Welcome to our Online Vehicle Rental System</h2>
+        <p>Here, you can find a wide range of vehicles available for rent. Simply browse our selection, choose a vehicle, and make a booking.</p>
+    </section>
+    <footer>
+        <p>© 2021 Online Vehicle Rental System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

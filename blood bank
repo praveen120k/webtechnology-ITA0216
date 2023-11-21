@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Bank Management System</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donors.html">Donors</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Blood Bank Management System</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida rhoncus diam a sodales.</p>
+        </section>
+
+        <section id="donors">
+            <h2>Donors</h2>
+            <p>List of registered blood donors:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Blood Type</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>A+</td>
+                        <td>New York</td>
+                    </tr>
+                    <!-- Add more donor entries as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="inventory">
+            <h2>Inventory</h2>
+            <p>Stock status of blood units:</p>
+            <ul>
+                <li>A+: 10 units</li>
+                <li>B+: 5 units</li>
+                <li>O-: 3 units</li>
+                <!-- Add more blood types and quantities as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2021 Blood Bank Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

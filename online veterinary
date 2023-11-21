@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Veterinary Care</title>
+  <style>
+    /* Add your CSS styling here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+    }
+    
+    main {
+      margin: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Veterinary Care</h1>
+  </header>
+
+  <main>
+    <h2>Welcome to our Online Veterinary Care platform!</h2>
+
+    <h3>Functionalities:</h3>
+    <ul>
+      <li>Register/Login</li>
+      <li>Schedule Appointments</li>
+      <li>Access Medical Records</li>
+      <li>Telemedicine Consultations</li>
+      <li>Order Medications and Supplies</li>
+      <li>Find Veterinarians and Clinics</li>
+      <li>Get Pet Health Tips and Articles</li>
+    </ul>
+
+    <h3>Register/Login</h3>
+    <p>Users can create an account or log in with their credentials to access all the available functionalities.</p>
+
+    <h3>Schedule Appointments</h3>
+    <p>Users can schedule appointments with veterinarians, selecting the desired date and time.</p>
+
+    <h3>Access Medical Records</h3>
+    <p>Users can view and manage their pet's medical history and records.</p>
+
+    <h3>Telemedicine Consultations</h3>
+    <p>Users can request telemedicine consultations with veterinarians, allowing them to discuss their pet's health remotely.</p>
+
+    <h3>Order Medications and Supplies</h3>
+    <p>Users can order medications, pet food, and other supplies conveniently through the platform.</p>
+
+    <h3>Find Veterinarians and Clinics</h3>
+    <p>Users can search for veterinarians and clinics near their location, access reviews and ratings, and make appointments.</p>
+
+    <h3>Get Pet Health Tips and Articles</h3>
+    <p>Users can access a range of pet health tips, articles, and educational resources to help them take better care of their pets.</p>
+  </main>
+
+  <footer>
+    © 2022 Online Veterinary Care. All rights reserved.
+  </footer>
+</body>
+</html>

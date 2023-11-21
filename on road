@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>On-Road Vehicle Breakdown Assisting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label,
+    input,
+    select {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    #output {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>On-Road Vehicle Breakdown Assisting</h1>
+  <form id="breakdownForm" action="">
+    <label for="vehicleType">Vehicle Type</label>
+    <select id="vehicleType" name="vehicleType">
+      <option value="car">Car</option>
+      <option value="motorcycle">Motorcycle</option>
+      <option value="truck">Truck</option>
+    </select>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" placeholder="Enter breakdown location">
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" placeholder="Enter breakdown description"></textarea>
+
+    <input type="submit" value="Submit" onclick="submitBreakdown()"/>
+  </form>
+
+  <div id="output"></div>
+
+  <script>
+    function submitBreakdown() {
+      var vehicleType = document.getElementById("vehicleType").value;
+      var location = document.getElementById("location").value;
+      var description = document.getElementById("description").value;
+
+      var output = document.getElementById("output");
+      output.innerHTML = "<h2>Breakdown Details:</h2>" +
+        "<p><strong>Vehicle Type:</strong> " + vehicleType + "</p>" +
+        "<p><strong>Location:</strong> " + location + "</p>" +
+        "<p><strong>Description:</strong> " + description + "</p>";
+
+      document.getElementById("breakdownForm").reset();
+    }
+  </script>
+</body>
+</html>
+```

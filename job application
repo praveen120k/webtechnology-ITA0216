@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Job Application Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Job Application</h1>
+
+  <form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    
+    <label for="position">Position:</label>
+    <select id="position" name="position" required>
+      <option value="">-- Select Position --</option>
+      <option value="developer">Developer</option>
+      <option value="designer">Designer</option>
+      <option value="manager">Manager</option>
+    </select>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
