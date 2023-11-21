@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complaint Registration and Management System</title>
+</head>
+<body>
+  
+  <header>
+    <h1>Complaint Registration and Management System</h1>
+  </header>
+  
+  <section id="registration">
+    <h2>Complaint Registration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="complaint">Complaint:</label>
+      <textarea id="complaint" name="complaint" required></textarea><br><br>
+      
+      <input type="submit" value="Register Complaint">
+    </form>
+  </section>
+  
+  <section id="management">
+    <h2>Complaint Management</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Complaint</th>
+        <th>Status</th>
+      </tr>
+      <!-- dynamic data populated from the database -->
+      <tr>
+        <td>John Doe</td>
+        <td>johndoe@example.com</td>
+        <td>Slow internet speed</td>
+        <td>Pending</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>janesmith@example.com</td>
+        <td>Electricity blackout</td>
+        <td>In Progress</td>
+      </tr>
+      <tr>
+        <td>David Johnson</td>
+        <td>davidjohnson@example.com</td>
+        <td>Insufficient parking space</td>
+        <td>Resolved</td>
+      </tr>
+    </table>
+  </section>
+  
+  <footer>
+    <p>&copy; 2022 Complaint Registration and Management System. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
